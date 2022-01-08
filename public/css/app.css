@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: aachen;
+}
+
+body {
+    margin: 25px;
+    padding: 25px;
+}
+
+h1 {
+    color: crimson;
+    font-size: 2.75em;
+}
+
+ol {
+    font-size: 1.5em;
+}
+
+a {
+    font-size: 1.5em;
+}
+
+label {
+    font-size: 1.25em;
+}
+
+input {
+    height: 20px;
+    width: 125px;
+}
+
+#btn-submit {
+    width: 150px;
+    height: 35px;
+    margin-top: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background: indigo;
+    border-style: none;
+    color: whitesmoke;
+}
