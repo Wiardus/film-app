@@ -24,4 +24,18 @@ class FilmsController extends Controller
         ]);
         return redirect('/films');
     }
+
+    public function show(Film $film)
+    {
+        return view('films.show', [
+            'film' => $film
+        ]);
+    }
+
+    public function destroy(Film $film)
+    {
+        $film->delete();
+        return redirect('/films');
+    }
+
 }
