@@ -32,6 +32,23 @@ class FilmsController extends Controller
         ]);
     }
 
+    public function edit(Film $film)
+    {
+        return view('films.edit', [
+            'film' => $film
+        ]);
+    }
+
+    public function update(Request $request, Film $film)
+    {
+        $film->update([
+            'title' => $request->title,
+            'rating' => $request->rating
+        ]);
+
+        return redirect('films/' . $film->id);
+    }
+
     public function destroy(Film $film)
     {
         $film->delete();
